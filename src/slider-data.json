@@ -3,43 +3,43 @@
     "name": "James Boul",
     "role": "UX Designer",
     "feedback": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci corporis cum cupiditate, delectus deserunt eum laborum minus nesciunt pariatur quia repellendus tenetur vitae voluptas.Corporis, dolorum, eligendi. Consequuntur dolorem enim esse, eum fugit harum labor.",
-    "photo": "./src/img/feedback-person-1.jpg"
+    "photo": "./dist/img/feedback-person-1.jpg"
   },
   {
     "name": "Bill Murey",
     "role": "BI Analyst",
     "feedback": "Lorem ipsum. A accusantium aperiam architecto deleniti distinctio eaque, expedita iure laborum minima natus neque, officia officiis praesentium quae reiciendis rerum sunt tempore vel voluptas voluptatibus! Est illum perspiciatis porro quibusdam voluptatem facere imp.",
-    "photo": "./src/img/feedback-person-2.jpg"
+    "photo": "./dist/img/feedback-person-2.jpg"
   },
   {
     "name": "Anna Vachousky",
     "role": "UI Designer",
     "feedback": "Lorem ipsum dolor sit amet, consectetur. At debitis expedita, labore laboriosam odio unde vel. Accusantium asperiores assumenda beatae commodi dolore eaque, excepturi facilis ipsum laborum nihil odit perspiciatis qui, repellendus repudiandae rerum suscipit unde veritatis?",
-    "photo": "./src/img/feedback-person-3.jpg"
+    "photo": "./dist/img/feedback-person-3.jpg"
   },
   {
     "name": "Maria Bell",
     "role": "Business Analyst",
     "feedback": "Lorem ipsum dolor sit amet, consectetur. Ab, aliquam aperiam deserunt dignissimos, dolor dolores doloribus eaque illo itaque maiores, nobis provident quae quas qui soluta veniam vitae. Adipisci assumenda error facere impedit quaerat quasi voluptatum? Dolores id libero?",
-    "photo": "./src/img/feedback-person-4.jpg"
+    "photo": "./dist/img/feedback-person-4.jpg"
   },
   {
     "name": "John Dou",
     "role": "Developer",
     "feedback": "Lorem ipsum dolor sit amet, adipisicing elit. Asperiores consectetur culpa, dicta dolorum enim ex in itaque officiis praesentium tempora? Amet architecto asperiores assumenda, beatae consectetur, distinctio dolorem doloremque excepturi impedit nemo obcaecati odio, place?",
-    "photo": "./src/img/feedback-person-5.jpg"
+    "photo": "./dist/img/feedback-person-5.jpg"
   },
   {
     "name": "Aleksandr Oushen",
     "role": "Project Manager",
     "feedback": "Lorem ipsum dolor sit amet, consectetur. Atque est molestias nemo sapiente vitae. Aliquam asperiores aut consequuntur debitis deleniti dolor enim error esse et eum, excepturi facilis fugit impedit iste nam nobis officia reprehenderit rerum ullam velit. Beatae quas qui.",
-    "photo": "./src/img/feedback-person-6.jpg"
+    "photo": "./dist/img/feedback-person-6.jpg"
   },
   {
     "name": "Sophia Ain",
     "role": "Developer",
     "feedback": "Lorem ipsum dolor sit amet, consectetur. Accusamus at et obcaecati veniam! Cupiditate distinctio dolore exercitationem numquam omnis provident quia quis saepe ullam voluptas. Adipisci aut dolorum eos nihil sunt tenetur unde veniam, veritatis enim error esse et dolor enim?",
-    "photo": "./src/img/feedback-person-7.jpg"
+    "photo": "./dist/img/feedback-person-7.jpg"
   }
 ]
 
