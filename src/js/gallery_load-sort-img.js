@@ -134,7 +134,7 @@ $(document).on('ready', function () {
         $(target).addClass(classActive);
     }
 
-    $.getJSON('./src/gallery-data.json', function (data) {
+    $.getJSON('./dist/gallery-data.json', function (data) {
         $(photoGallery).append(createDomElementsObject(data));
         hoverDropDownPanel()
     }).done(function (data) {

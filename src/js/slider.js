@@ -49,7 +49,7 @@ $(document).on('ready', function () {
         }
     }
 
-    $.getJSON('./src/slider-data.json', function (data) {
+    $.getJSON('./dist/slider-data.json', function (data) {
         dataArr = data;
         $.map(data, function (val) {
             imgArr.push(val.photo);
