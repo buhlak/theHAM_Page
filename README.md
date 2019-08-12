@@ -1,18 +1,18 @@
 # Landing-page_Dart-service-manager
 <strong>
-Одностраничный сайт, рекламной тематики. <br/>
-Полностью адаптирован под мобильные устройства (ширина экрана 360px+). <br/>
-Кроссбраузерная адаптация / GoogleChrome+ / Firefox+ / Edge+ / IE- / Opera+ /. <br/>
-Технологии - scss, js native (ES 5, ES 6).<br/>
+Сайт, рекламной тематики. <br/>
+Полностью адаптирован под мобильные устройства (ширина экрана 320px+). <br/>
+Кроссбраузерная адаптация / GoogleChrome+ / Firefox+ / Edge+ / IE11+ / Opera+ /. <br/>
+Технологии - scss, jQuery.<br/>
 Методологии - БЭМ. <br/>
-Инструменты - таск-менеджер Gulp (для сборки). <br/>
+Инструменты - Webpack - для сборки проекта. <br/>
 <br/>
-Landing page, advertising topics. <br/>
-Fully adaptive for mobile (width 360px+). <br/>
-Crossbrowser adaptive / GoogleChrome+ / Firefox+ / Edge+ / IE- / Opera+ /. <br/>
-Technologies - scss, js native (ES 5, ES 6). <br/> 
+Page, advertising topics. <br/>
+Fully adaptive for mobile (width 320px+). <br/>
+Crossbrowser adaptive / GoogleChrome+ / Firefox+ / Edge+ / IE11+ / Opera+ /. <br/>
+Technologies - scss, jQuery. <br/> 
 Methodologies - BEM. <br/>
-Tools - Gulp Task Manager (for bundling). <br/>
+Tools - Webpack - for project bundling. <br/>
 </strong>
 <br/>
 <em>В папке src размещена не собранная версия проекта, в паке dist готовая сброрка</em>
