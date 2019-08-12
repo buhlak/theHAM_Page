@@ -1,0 +1,150 @@
+.nav-menu {
+  font-family: $font-family-Montserrat;
+  display: flex;
+  margin-left: auto;
+
+  &__toggle-menu-button {
+    @include b-pos_b-repeat_b-size(center, no-repeat, auto);
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/burger-menu-icon.png");
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 10px;
+  }
+
+  &__href {
+    @include f-size_f-weight(0.75rem, bold);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    position: relative;
+    text-transform: uppercase;
+    color: $color-white;
+
+    &:hover {
+      color: $color-green-aqua;
+
+      &:after {
+        background-color: $color-green-aqua;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: flex;
+      width: 100%;
+      height: 2px;
+      position: relative;
+      top: 55px;
+    }
+  }
+}
+
+@media (max-width: $lg - 1) {
+  .nav-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 149px;
+
+    &__toggle-menu-button {
+      display: flex;
+      transform: translateY(50%);
+      cursor: pointer;
+    }
+
+    &__list {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      max-height: 0;
+      padding: 15px 70px 15px 30px;
+      position: absolute;
+      top: 93px;
+      right: -149px;
+      opacity: 0;
+      overflow: hidden;
+      background-color: rgba(50, 50, 50, 0.8);
+      transition: all 0.3s ease;
+
+      &--active {
+        display: flex;
+        opacity: 1;
+        max-height: 300px;
+        animation-duration: 0.5s;
+        animation-name: smoothShow;
+      }
+    }
+
+    &__item {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+
+    &__href {
+      @include f-size_f-weight(1rem, bold);
+
+      &:after {
+        position: absolute;
+        top: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: $md - 1) {
+  .nav-menu {
+    position: absolute;
+    right: 89px;
+
+    &__list {
+      padding: 15px 20px 15px 25px;
+      right: -89px;
+    }
+  }
+}
+
+@media (max-width: $sm - 1) {
+  .nav-menu {
+    position: absolute;
+    right: 20px;
+
+    &__list {
+      align-items: flex-end;
+      padding: 15px;
+      right: -20px;
+    }
+  }
+}
+
+@media (max-width: $xs - 1) {
+  .nav-menu {
+    &__list {
+      top: 75px;
+    }
+
+    &__toggle-menu-button {
+      transform: translateY(0);
+
+    }
+  }
+}
+
+@keyframes smoothShow {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 300px;
+  }
+}

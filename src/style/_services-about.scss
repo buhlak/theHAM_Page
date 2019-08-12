@@ -1,0 +1,129 @@
+.services-about {
+  margin-top: 70px;
+  font-family: $font-family-Montserrat;
+
+  &__list {
+    display: flex;
+    position: relative;
+  }
+
+  &__item {
+    box-sizing: border-box;
+    width: 16.6666%;
+
+    &:last-child {
+      border-right: 1px solid $color-light-gray;
+    }
+  }
+
+  &__item-title {
+    @include f-size_f-weight(1rem, normal);
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px 5px;
+    position: relative;
+    border: 1px solid $color-light-gray;
+    border-right: 0;
+    background-color: $color-navy-white;
+    text-transform: capitalize;
+    white-space: nowrap;
+    text-align: center;
+    color: $color-gray-second;
+    font-family: $font-family-Montserrat;
+    cursor: pointer;
+
+    &--active {
+      border-color: $color-green-aqua;
+      background-color: $color-green-aqua;
+      color: $color-white;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 101%;
+        transform: translateX(-50%);
+        left: 50%;
+        right: 50%;
+        border: 10px solid transparent;
+        border-top-color: $color-green-aqua;
+      }
+    }
+  }
+
+  &__item-description {
+    display: none;
+    margin-top: 25px;
+    position: absolute;
+    left: 0;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__img {
+    height: 142px;
+    margin-right: 15px;
+    margin-bottom: 2px;
+    float: left;
+  }
+
+  &__text {
+    @include f-size_f-weight(0.8rem, thin);
+    line-height: 1.6rem;
+  }
+}
+
+@media (max-width: $xl - 1) {
+  .services-about {
+    &__item-title {
+      @include f-size_f-weight(0.85rem, normal);
+    }
+  }
+}
+
+@media (max-width: $lg - 1) {
+  .services-about {
+    &__item-title {
+      @include f-size_f-weight(0.8rem, normal);
+    }
+  }
+}
+
+@media (max-width: $md - 1) {
+  .services-about {
+    &__item-title {
+      @include f-size_f-weight(1rem, normal);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      white-space: normal;
+      line-height: 0.8rem;
+
+      &--active {
+        &:after {
+          top: 101%;
+          transform: translateX(-50%);
+          left: 50%;
+          right: 50%;
+          z-index: 2;
+        }
+      }
+    }
+
+    &__text {
+      @include f-size_f-weight(1rem, thin);
+    }
+  }
+}
+
+@media (max-width: $xs - 1) {
+  .services-about {
+    &__item-title {
+      @include f-size_f-weight(0.75rem, normal);
+      line-height: 0.6rem;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.news-card {
+  display: flex;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24%;
+    margin-top: 45px;
+    position: relative;
+    font-family: $font-family-Montserrat;
+  }
+
+  &__inside-item-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__date {
+    @include f-size_f-weight(1rem, normal);
+    padding: 15px 20px;
+    background-color: $color-dark-green;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    text-transform: capitalize;
+    color: $color-white;
+    cursor: default;
+
+    &:active {
+      background-color: $color-green-aqua;
+    }
+  }
+
+  &__day {
+    position: relative;
+    bottom: 4px;
+  }
+
+  &__month {
+    position: relative;
+    top: 4px;
+  }
+
+  &__sign {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px 0 12px 10px;
+    background-color: $color-navy-white;
+    border: 1px solid $color-light-gray;
+  }
+
+  &__title {
+    @include f-size_f-weight(1.125rem, bold);
+    width: 100%;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: $color-gray-second;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-green-aqua;
+    }
+  }
+
+  &__author {
+    @include f-size_f-weight(0.85rem, light);
+    display: flex;
+    text-transform: capitalize;
+    color: $color-gray-second-lighter-b;
+    cursor: pointer;
+    &:after {
+      content: '';
+      width: 1px;
+      height: 100%;
+      margin: 0 10px;
+      background-color: $color-gray-second;
+    }
+  }
+
+  &__comments {
+    @include f-size_f-weight(0.85rem, light);
+    color: $color-gray-second-lighter-b;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: $md - 1) {
+  .news-card {
+    &__list {
+      justify-content: center;
+    }
+    &__item {
+      width: 35%;
+      margin: 1%;
+    }
+  }
+}
+
+@media (max-width: $xs - 1) {
+  .news-card {
+    &__item {
+      width: 70%;
+      margin: 2%;
+    }
+  }
+}

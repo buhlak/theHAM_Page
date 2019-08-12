@@ -1,0 +1,43 @@
+.title-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.title {
+  @include f-size_f-weight(2.25rem, normal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  font-family: $font-family-Montserrat;
+  color: $color-dark-gray;
+  text-align: center;
+
+  &__design-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 89px;
+    height: 5px;
+    margin-top: 32px;
+
+    &:before {
+      content: '';
+      width: 79px;
+      height: 1px;
+      position: relative;
+      margin-right: auto;
+      background-color: $color-green-aqua;
+    }
+
+    &:after {
+      content: '';
+      width: 79px;
+      height: 1px;
+      position: relative;
+      margin-left: auto;
+      background-color: $color-green-aqua;
+    }
+  }
+}

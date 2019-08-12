@@ -1,0 +1,72 @@
+.call-to-action {
+  @include b-pos_b-repeat_b-size(center, no-repeat, cover);
+  position: relative;
+  background-image: url("../img/call-to-action_background-color.jpg");;
+
+
+  &__container {
+    padding-top: 125px;
+    padding-bottom: 125px;
+  }
+
+  &__title {
+    @include f-size_f-weight(2.5rem, bold);
+    flex-direction: row;
+    justify-content: center;
+    z-index: 2;
+    width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    line-height: 2.2rem;
+    color: $color-green-aqua;
+  }
+
+  &__title-subtitle {
+    @include f-size_f-weight(1rem, normal);
+    flex-direction: row;
+    justify-content: center;
+    z-index: 2;
+    width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+    margin-top: 30px;
+    text-transform: none;
+    line-height: 1.1rem;
+    color: $color-light-second;
+  }
+
+  &__button {
+    z-index: 2;
+    margin-top: 70px;
+    border-radius: 3px;
+    background-color: $color-green-aqua;
+    color: $color-white;
+  }
+}
+
+@media (max-width: $lg - 1) {
+  .call-to-action {
+    &__title {
+      @include f-size_f-weight(2.25rem, bold);
+    }
+
+    &__title-subtitle {
+      @include f-size_f-weight(0.95rem, normal);
+    }
+
+  }
+}
+
+@media (max-width: $md - 1) {
+  .call-to-action {
+    &__title {
+      @include f-size_f-weight(2rem, bold);
+    }
+
+    &__title-subtitle {
+      @include f-size_f-weight(0.9rem, normal);
+    }
+
+  }
+}
